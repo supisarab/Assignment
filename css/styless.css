@@ -1629,27 +1629,43 @@ body {
     box-shadow: 0 0 0 2px rgba(200, 59, 30, 0.1);
 }
 
-/* Custom Radio Group */
-.radio-group {
+/* ================= GENDER RADIO ================= */
+
+.form-group .radio-group {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 25px;
     height: 40px;
+    width: 100%;
+    margin: 0;
 }
 
-.radio-label {
-    display: flex;
+.form-group .radio-label {
+    display: inline-flex;
+    flex-direction: row;
     align-items: center;
     gap: 8px;
+    margin: 0;
+    padding: 0;
     font-size: 13px;
+    font-weight: 400;
     color: #374151;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.form-group .radio-label input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    accent-color: #1E1B4B;
     cursor: pointer;
 }
 
-.radio-label input[type="radio"] {
-    accent-color: #1E1B4B;
-    width: 16px;
-    height: 16px;
+.form-group .radio-custom {
+    display: none;
 }
 
 /* 5. Buttons Styling */
