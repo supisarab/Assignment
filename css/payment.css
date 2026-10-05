@@ -3,7 +3,7 @@
 ========================= */
 body {
   background-color: #f8fafc;
-  color: #334155;
+  color: #334155; /*สีข้อความเริ่มต้น*/
 }
 
 /* TOPBAR / NAVBAR */
@@ -13,11 +13,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 12px 60px;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0; /*เส้นขอบด้านล่าง*/
 }
 
 .brand {
-  display: flex;
+  display: flex; /*โลโกและชื่อเว็บเรียงเป็นแนวนอน*/
   align-items: center;
   gap: 12px;
 }
@@ -25,7 +25,7 @@ body {
 .brand img {
   width: 45px;
   height: 45px;
-  object-fit: contain;
+  object-fit: contain; /*แสดงรูปเต็มกรอบโดยไม่บิดเบี้ยว*/
 }
 
 .topbar-text h1 {
@@ -70,8 +70,8 @@ body {
   background-color: #0f172a;
   color: #ffffff;
 }
-.payment-container {
-    min-height: 80vh;
+.payment-container { /* กล่องหลักของหน้าชำระเงิน */
+    min-height: 80vh; /* สูงอย่างน้อย 80% ของความสูงหน้าจอ */
     padding: 50px 20px;
     background: #f5f7fa;
 }
@@ -115,12 +115,12 @@ body {
 
 .info-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*แยกข้อมูลซ้ายขวา*/
     padding: 12px 0;
     border-bottom: 1px solid #eee;
 }
 
-.info-row:last-child {
+.info-row:last-child { /*เอาเส้นขอบด้านล่างของแถวสุดท้ายออก*/
     border-bottom: none;
 }
 
@@ -129,35 +129,32 @@ body {
 
 .payment-price {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*ชื่อค่าธรรมเนียมอยู่ซ้าย ราคาอยู่ขวา*/
     align-items: center;
-
     background: #fff5f0;
     border: 1px solid #f0d2c5;
-
     padding: 20px;
     border-radius: 10px;
-
     margin-bottom: 25px;
 }
 
-.payment-price span {
+.payment-price span { /*ค่าธรรมเนียมการสมัคร*/
     font-size: 18px;
     font-weight: bold;
 }
 
-.payment-price strong {
+.payment-price strong { /*ตัวเลขราคา*/
     font-size: 28px;
 }
 
 
 /* ช่องทางชำระเงิน */
 
-.payment-method {
+.payment-method { /*เว้ยระยะหลังส่วนช่องทางชำระเงิน*/
     margin-bottom: 25px;
 }
 
-.method-box {
+.method-box { /*ช่องทางชำระเงินแต่ละช่อง*/
     background: #f7f7f7;
     padding: 20px;
     border-radius: 10px;
@@ -168,19 +165,17 @@ body {
     margin-top: 0;
 }
 
-.payment-note {
+.payment-note { /*หมายเหตุ*/
     color: #d71920;
     font-size: 14px;
 }
 
-
 /* อัปโหลด */
-
 .upload-section {
     margin-bottom: 25px;
 }
 
-.upload-section input[type="file"] {
+.upload-section input[type="file"] { /*ช่องอัปโหลดไฟล์*/
     width: 100%;
     padding: 15px;
     border: 1px dashed #aaa;
@@ -188,24 +183,20 @@ body {
     box-sizing: border-box;
 }
 
-
 /* checkbox */
-
 .payment-confirm {
-    margin: 25px 0;
+    margin: 25px 0; /*เว้นระยะบนล่าง*/
 }
 
 .payment-confirm input {
     margin-right: 8px;
 }
 
-
 /* ปุ่ม */
-
-.payment-buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
+.payment-buttons { /*จัดปุ่มย้อนกลับแลยืนยันชำระเงิน*/
+    display: flex; /*อยู่แถวเดียว*/
+    justify-content: space-between; /*คนละฝั่ง*/
+    gap: 15px; /*ระยะห่างระหว่างปุ่ม*/
 }
 
 .btn-back,
@@ -240,15 +231,12 @@ body {
     justify-content: center;
 }
 
-.payment-footer p {
+.payment-footer p { /*คุมกข้อความใน footer*/
     margin: 0;
     font-size: 12px;
 }
 
-
-
-/* RECEIPT PAGE */
-
+/* หน้าใบเสร็จ */
 .receipt-header {
     width: 100%;
     height: 90px;
@@ -260,7 +248,7 @@ body {
     border-bottom: 1px solid #e5e5e5;
 }
 
-.receipt-brand {
+.receipt-brand { /*โลโก้และชื่อเว็บในใบเสร็จ*/
     display: flex;
     align-items: center;
     gap: 18px;
@@ -284,20 +272,18 @@ body {
     color: #777;
 }
 
-
 /* PAGE */
-
 .receipt-page {
-    min-height: calc(100vh - 145px);
+    min-height: calc(100vh - 145px); /*ความสูงหน้าจอ ลบพื้นที่ Header และ Footer*/
     background: #f5f6f8;
     padding: 45px 20px 60px;
     box-sizing: border-box;
 }
 
-.receipt-card {
+.receipt-card { /*กระดาษใบเสร็จ*/
     width: 800px;
-    max-width: 100%;
-    margin: auto;
+    max-width: 100%; /*ไม่ล้นจอ*/
+    margin: auto; /*กลางหน้า*/
     background: #ffffff;
     padding: 40px;
     box-sizing: border-box;
@@ -305,16 +291,14 @@ body {
     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
 }
 
-
 /* TITLE */
-
 .receipt-title {
     text-align: center;
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 25px;
 }
 
-.receipt-title h2 {
+.receipt-title h2 { /*คุมคำว่าใบเสร็จรับเงิน*/
     margin: 0;
     font-size: 30px;
     color: #333;
@@ -324,11 +308,11 @@ body {
     margin: 5px 0 18px;
     font-size: 13px;
     color: #999;
-    letter-spacing: 2px;
+    letter-spacing: 2px; /*ระยะระหว่างตัวอักษร*/
 }
 
-.success-message {
-    display: inline-block;
+.success-message { /*ชำระเงินสำเร็จ*/
+    display: inline-block; /*ให้ข้อความอยู่ในบรรทัดเดียว*/
     padding: 8px 18px;
     background: #eaf8ef;
     color: #228b4b;
@@ -337,9 +321,7 @@ body {
     font-weight: bold;
 }
 
-
 /* RECEIPT INFO */
-
 .receipt-info {
     display: flex;
     justify-content: space-between;
@@ -347,13 +329,13 @@ body {
     border-bottom: 1px solid #eeeeee;
 }
 
-.receipt-info div {
+.receipt-info div { /*ทำให้หัวข้อและข้อมูลเรียงบนลงล่าง*/
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.receipt-info span {
+.receipt-info span { /*คุมข้อความหัวข้อ เช่น ชื่อผู้สมัคร เลขที่ใบเสร็จ*/
     font-size: 13px;
     color: #999;
 }
@@ -363,10 +345,8 @@ body {
     color: #333;
 }
 
-
 /* SECTION */
-
-.receipt-section {
+.receipt-section { /*เว้นระยะด้านบนของแต่ละส่วน*/
     margin-top: 28px;
 }
 
@@ -376,10 +356,8 @@ body {
     color: #333;
 }
 
-
 /* APPLICANT */
-
-.applicant-info {
+.applicant-info { /*กล่องข้อมูลผู้สมัคร*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
@@ -403,15 +381,13 @@ body {
     color: #333;
 }
 
-
 /* TABLE */
-
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /*เอาเส้นขอบระหว่างช่องออก*/
 }
 
-th,
+th, /*หัวตารางและข้อมูลในตาราง*/
 td {
     padding: 14px;
     border-bottom: 1px solid #eeeeee;
@@ -419,7 +395,7 @@ td {
     font-size: 14px;
 }
 
-th:last-child,
+th:last-child, /*หัวตารางคอลัมน์สุดท้าย*/
 td:last-child {
     text-align: right;
 }
@@ -436,9 +412,7 @@ tfoot td {
     border-bottom: none;
 }
 
-
 /* STATUS */
-
 .receipt-status {
     margin-top: 25px;
     padding: 15px 18px;
@@ -458,9 +432,7 @@ tfoot td {
     font-size: 14px;
 }
 
-
-/* BUTTON */
-
+/* BUTTON */ /* ปุ่มย้อนกลับและปุ่มพิมพ์ใบเสร็จ */
 .receipt-buttons {
     display: flex;
     justify-content: space-between;
@@ -476,7 +448,7 @@ tfoot td {
     font-size: 14px;
 }
 
-.print-button {
+.print-button { /*ปุ่มพิมพ์ใบเสร็จ*/
     padding: 12px 25px;
     background: #d71920;
     color: white;
@@ -486,14 +458,12 @@ tfoot td {
     cursor: pointer;
 }
 
-.print-button:hover {
+.print-button:hover { /*เมื่อเอาเมาส์ชี้*/
     background: #b9151b;
 }
 
-
 /* NOTE */
-
-.receipt-note {
+.receipt-note { /*หมายเหตุด้านล่าง*/
     margin: 25px 0 0;
     text-align: center;
     font-size: 12px;
@@ -557,7 +527,7 @@ footer {
 
 .footer-col a {
   color: #ffffff;
-  opacity: 0.8;
+  opacity: 0.8; /*ความโปร่งแสงของข้อความลิงก์*/
   text-decoration: none;
   font-size: 12px;
 }
@@ -571,8 +541,7 @@ footer {
 }
 
 /* MOBILE */
-
-@media (max-width: 700px) {
+@media (max-width: 700px) { /*เมื่อหน้าจอเล็กกว่า 700px*/
 
     .receipt-header {
         padding: 10px 20px;

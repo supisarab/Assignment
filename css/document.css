@@ -1,7 +1,7 @@
 /* Global Reset & Styling */
-{
+*{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0; /*ล้างระยะนอกเดิม*/
     padding: 0;
     font-family: 'Sarabun', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
@@ -11,7 +11,7 @@ body {
     color: #333333;
     padding: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: center; /*เอาเนื้อหาให้อยู่ตรงกลาง*/
 }
 
 .doc-container {
@@ -21,10 +21,10 @@ body {
 
 /* Header Bar */
 .doc-header {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /*จัดเรียงเป็นแนวนอน*/
+    justify-content: space-between; /*ดันเนื้อหาไปซ้ายขวา*/
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 24px; /*ระยะห่างด้านล่าง*/
 }
 
 .page-title {
@@ -35,11 +35,11 @@ body {
 
 .header-right {
     display: flex;
-    align-items: center;
-    gap: 12px;
+    align-items: center; /*กลางแนวตั้ง*/
+    gap: 12px; /*ระยะระหว่างกระดิ่งกับปีการศึกษา*/
 }
 
-.icon-btn {
+.icon-btn { /*กระดิ่งแจ้งเตือน*/
     background: #FFFFFF;
     border: 1px solid #E5E7EB;
     width: 36px;
@@ -48,7 +48,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    cursor: pointer; /*เมาส์ชี้เป็นมือ*/
     transition: background-color 0.2s;
 }
 
@@ -56,13 +56,13 @@ body {
     background-color: #F9FAFB;
 }
 
-.bell-icon {
+.bell-icon { /*ไอคอนกระดิ่ง*/
     width: 18px;
     height: 18px;
-    stroke: #4B5563;
+    stroke: #4B5563; 
 }
 
-.year-badge {
+.year-badge { /*ปีการศึกษา*/
     background-color: #EEF2FF;
     color: #4F46E5;
     font-size: 12px;
@@ -72,12 +72,12 @@ body {
 }
 
 /* Base Card Styling */
-.card {
+.card { /*กล่องเอกสาร*/
     background: #FFFFFF;
     border-radius: 12px;
     padding: 24px 28px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02); /*เงา*/
     border: 1px solid #E5E7EB;
 }
 
@@ -88,7 +88,7 @@ body {
     margin-bottom: 20px;
 }
 
-.mb-16 {
+.mb-16 { /*ระยะห่างด้านล่าง 16px*/
     margin-bottom: 16px;
 }
 
@@ -98,13 +98,13 @@ body {
     overflow-x: auto;
 }
 
-.doc-table {
+.doc-table { /*ตารางเอกสาร*/
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /*รวมเส้นขอบไม่ให้ซ้อนกัน*/
     text-align: left;
 }
 
-.doc-table th {
+.doc-table th { /*หัวตาราง*/
     font-size: 11px;
     font-weight: 600;
     color: #9CA3AF;
@@ -112,24 +112,24 @@ body {
     border-bottom: 1px solid #F3F4F6;
 }
 
-.doc-table td {
+.doc-table td { /*ข้อมูลในตาราง*/
     padding: 16px;
     font-size: 13px;
     border-bottom: 1px solid #F3F4F6;
     vertical-align: middle;
 }
 
-.doc-table tr:last-child td {
+.doc-table tr:last-child td { /*แถวสุดท้ายไม่มีเส้นขอบด้านล่าง*/
     border-bottom: none;
 }
 
-/* Column Widths & Alignments */
+/* ความกว้างของคอลัมน์ */
 .col-name { width: 45%; }
 .col-status { width: 20%; }
 .col-size { width: 15%; }
 .col-action { width: 20%; text-align: right; }
 
-.doc-name {
+.doc-name { /*ชื่อเอกสาร*/
     font-weight: 600;
     color: #1F2937;
     display: flex;
@@ -142,15 +142,15 @@ body {
     opacity: 0.7;
 }
 
-.file-size {
+.file-size { /*ขนาดไฟล์*/
     color: #6B7280;
 }
 
 /* Status Tags */
-.status-tag {
-    display: inline-block;
+.status-tag { /*แท็กสถานะ*/
+    display: inline-block; /*เป็นกล่องแต่ยังอยู่ในบรรทัดเดียวกัน*/
     padding: 4px 12px;
-    border-radius: 20px;
+    border-radius: 20px; /*ทรงแคปซูล*/
     font-size: 11px;
     font-weight: 600;
 }
@@ -171,7 +171,7 @@ body {
 }
 
 /* Table Action Buttons */
-.action-btns {
+.action-btns { /*ปุ่มดู ลบ อัปโหลด ชิดขวา*/
     text-align: right;
 }
 
@@ -212,12 +212,12 @@ body {
     background-color: #C2410C;
 }
 
-/* Pure CSS Dropzone Upload Area (No JS) */
+/* ซ่อนinput file */
 .file-input {
     display: none;
 }
 
-.dropzone {
+.dropzone { /*กล่องอัปโหลดไฟล์*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,12 +230,12 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-.dropzone:hover {
+.dropzone:hover { /*เมื่อเอาเมาส์ชี้*/
     border-color: #EA580C;
     background-color: #FFF7ED;
 }
 
-.cloud-icon-wrapper {
+.cloud-icon-wrapper { /*กล่องไอคอนเมฆ*/
     width: 44px;
     height: 44px;
     background-color: #EEF2FF;

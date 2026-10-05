@@ -1,41 +1,31 @@
-/* ==============================
-   RESET
-============================== */
+/*ล้างค่าเริ่มต้นของเบราว์เซอร์*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ==============================
-   BODY
-============================== */
-
+/*พื้นหลังและฟอนต์ทั้งหน้า*/
 body {
     font-family: Arial, "Noto Sans Thai", sans-serif;
     background: #f5f6f8;
     color: #333;
-    min-height: 100vh;
+    min-height: 100vh; /*สูงอย่างน้อยเต็มหน้าจอ*/
 }
 
-/* ==============================
-   HEADER
-============================== */
+/*nvabar ด้านบน*/
 .topbar {
     width: 100%;
     height: 108px;
     background: #040404;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 45px 0 50px;
+    justify-content: space-between; /*โลโกอยู่ซ้าย เมนูอยู่ขวา*/
+    padding: 0 45px 0 50px; /*บน0 ล่าง0 ซ้าย50 ขวา45*/
     border-bottom: 1px solid #333333;
 }
 
-/* ==============================
-   BRAND
-============================== */
-
+/* โลโก้และชื่อเว็บไซต์ */
 .brand {
     display: flex;
     align-items: center;
@@ -45,41 +35,39 @@ body {
 .brand img {
     width: 60px;
     height: 60px;
-    object-fit: contain;
+    object-fit: contain; /*ปรับขนาดรูปให้พอดี*/
 }
 
-.brand-text {
+.brand-text { /*กลุ่มชื่อเว็บ*/
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*เรียงข้อความบนลงล่าง*/
     justify-content: center;
 }
 
-.brand-title {
+.brand-title { /*ชื่อเว็บ*/
     font-size: 19px;
     font-weight: bold;
     color: #f8f3f3;
     margin-bottom: 8px;
 }
 
-.brand-subtitle {
+.brand-subtitle { /*ชื่อระบบ*/
     font-size: 12px;
     color: #f5f0f0;
 }
 
-/* ==============================
-   NAVIGATION
-============================== */
+/*เมนูด้านบน*/
 .nav-menu {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.nav-menu a {
+.nav-menu a { /*ลิงก์เมนู*/
     text-decoration: none;
     color: #ffffff;
     font-size: 14px;
-    white-space: nowrap;
+    white-space: nowrap; /*ไม่ให้ขึเ้นบรรทัดใหม่*/
     transition: 0.2s;
 }
 
@@ -92,15 +80,13 @@ body {
     font-weight: bold;
 }
 
-/* ==============================
-   LOGIN BUTTON
-============================== */
+/* เข้าสู่ระบบ */
 .login-button {
     background: #f4511e;
     color: #ffffff !important;
     padding: 11px 23px;
     border-radius: 8px;
-    font-size: 14px !important;
+    font-size: 14px !important; /*บังคับให้คำมีความสำคัญมากที่สุด*/
     margin-left: 20px;
     transition: 0.2s;
 }
@@ -108,19 +94,15 @@ body {
     background: #d83d10;
 }
 
-/* ==============================
-   NEWS CONTAINER
-============================== */
+/*พื้นที่รวมข่าว*/
 .news-container {
     width: 1100px;
-    max-width: calc(100% - 40px);
+    max-width: calc(100% - 40px); /*บนจอเล็กให้เหลือขอบรวม 40px*/
     margin: 0 auto;
     padding: 50px 0 70px;
 }
 
-/* ==============================
-   NEWS HEADING
-============================== */
+/*หัวข้อข่าว*/
 .news-heading {
     margin-bottom: 30px;
 }
@@ -128,33 +110,29 @@ body {
 .news-heading h1 {
     font-size: 30px;
     color: #fbf4f4;
-    margin-bottom: 8px;
+    margin-bottom: 8px; /*ระยะห่างด้านล่าง*/
 }
 
-.news-heading p {
+.news-heading p { /*คำอธิบายข่าว*/
     font-size: 14px;
     color: #777777;
     line-height: 1.7;
 }
 
-/* ==============================
-   NEWS GRID
-============================== */
+/*กลุ่มข่าวเป็นตาราง 3 คอลัมน์*/
 .news-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    grid-template-columns: repeat(3, 1fr); /*3 การ์ดต่อแถว*/
+    gap: 22px; /*ระยะห่างระหว่างการ์ด*/
 }
 
-/* ==============================
-   NEWS CARD
-============================== */
+/*การ์ดข่าว*/
 .news-card {
     background: #ffffff;
     border: 1px solid #eeeeee;
     border-radius: 12px;
-    overflow: hidden;
-    display: flex;
+    overflow: hidden; /*ซ๋อนส่วนเกินของรูปภาพ*/
+    display: flex; /*จัดเรียงเนื้อหาภายในเป็นแนวนอน*/
     flex-direction: column;
     transition: 0.25s;
 }
@@ -164,13 +142,11 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
 }
 
-/* ==============================
-   NEWS IMAGE
-============================== */
+/*กรอบรูปภาพข่าว*/
 .news-image {
     width: 100%;
     height: 190px;
-    overflow: hidden;
+    overflow: hidden; /*ตัดส่วนเกินของรูปภาพ*/
     background: #eeeeee;
 }
 
@@ -178,7 +154,7 @@ body {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover;
+    object-fit: cover; /*ให้รูปเต็มกรอบ แต่บางส่วนอาจถูกตัด*/
     transition: 0.3s;
 }
 
@@ -194,9 +170,7 @@ body {
     flex: 1;
 }
 
-/* ==============================
-   CATEGORY
-============================== */
+/*หมวดหมู่ข่าว*/
 .news-category {
     display: inline-block;
     background: #fff0f0;
@@ -207,9 +181,7 @@ body {
     margin-bottom: 8px;
 }
 
-/* ==============================
-   DATE
-============================== */
+/*วันที่ข่าว*/
 .news-date {
     display: block;
     font-size: 12px;
@@ -217,9 +189,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* ==============================
-   NEWS TITLE
-============================== */
+/*ชื่อข่าว*/
 .news-content h2 {
     font-size: 17px;
     line-height: 1.5;
@@ -227,18 +197,14 @@ body {
     margin-bottom: 10px;
 }
 
-/* ==============================
-   NEWS DESCRIPTION
-============================== */
+/* รายละเอียดข่าว */
 .news-content p {
     font-size: 13px;
     line-height: 1.7;
     color: #777777;
 }
 
-/* ==============================
-   FOOTER
-============================== */
+/*ท้ายข่าว*/
 footer {
     width: 100%;
 }
@@ -257,9 +223,7 @@ footer {
     text-align: center;
 }
 
-/* ==============================
-   TABLET
-============================== */
+/* หมุมมองมือถือ */
 @media (max-width: 950px) {
     .topbar {
         height: auto;
@@ -273,9 +237,7 @@ footer {
     }
 }
 
-/* ==============================
-   MOBILE
-============================== */
+/* มุมมองมือถือเล็ก */
 @media (max-width: 650px) {
     .topbar {
         height: auto;

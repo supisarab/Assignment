@@ -1,5 +1,5 @@
 /* ================= index ================= */
-body {
+body { 
   background-color: #f8fafc;
   color: #334155;
 }
@@ -7,17 +7,17 @@ body {
 /* TOPBAR / NAVBAR */
 .topbar {
   background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; /* เรียงแนวนอน */
+  justify-content: space-between; /* เว้นระยะซ้ายขวา */
+  align-items: center; /* กึ่งกลางแนวตั้ง */
   padding: 12px 60px;
   border-bottom: 1px solid #e2e8f0;
 }
 
-.brand {
+.brand { /*โลโก้ + ชื่อมอ */
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 12px; /* ระยะระหว่างโลโก้กับข้อความ */
 }
 
 .brand img {
@@ -38,30 +38,30 @@ body {
 }
 
 .nav-link {
-  display: flex;
+  display: flex; 
   gap: 28px;
 }
 
 .nav-link a {
-  text-decoration: none;
+  text-decoration: none; /* ลบเส้นใต้ */
   color: #475569;
   font-size: 14px;
 }
 
 .nav-link a.active,
-.nav-link a:hover {
+.nav-link a:hover { /*เปลี่ยนสีตอนเลือกหรือเอาเมาส์ไปวาง*/
   color: #a3320b;
   font-weight: 600;
 }
 
 .btn-login {
   text-decoration: none;
-  border: 1px solid #0f172a;
+  border: 1px solid #0f172a; /*เส้นขอบ */
   color: #0f172a;
   padding: 6px 16px;
-  border-radius: 6px;
+  border-radius: 6px; /*ความมนของมุม */
   font-size: 13px;
-  transition: all 0.2s;
+  transition: all 0.2s; /*เวลาเปลี่ยนสี */
 }
 
 .btn-login:hover {
@@ -80,7 +80,7 @@ body {
 .tcas-tag {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 4px 12px;
-  border-radius: 20px;
+  border-radius: 20px; /* ความมนของมุม */
   font-size: 12px;
 }
 
@@ -603,7 +603,7 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 40px;
+    padding: 12px 40px; /*เว้นด้านใน*/
 }
 
 .brand-logo {
@@ -640,7 +640,7 @@ input:focus {
     font-size: 0.85rem;
 }
 
-.nav-links a.active, .nav-links a:hover {
+.nav-links a.active, .nav-links a:hover { /*เปลี่ยนสีตอนเอาเมาส์ไปวาง*/
     color: #ff6f43;
 }
 
@@ -662,7 +662,7 @@ input:focus {
 
 .hero-inner {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
 }
 
 .hero-inner h1 {
@@ -680,7 +680,7 @@ input:focus {
 /* Filter Section */
 .filter-section {
     background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0; /*เส้นขอบด้านล่าง*/
     padding: 15px 20px;
 }
 
@@ -692,14 +692,14 @@ input:focus {
 }
 
 .search-box {
-    flex: 1.5;
-    position: relative;
+    flex: 1.5; /* กำหนดความกว้างของกล่องค้นหา */
+    position: relative; /* เพื่อให้ไอคอนค้นหาอยู่ด้านใน */
     display: flex;
     align-items: center;
 }
 
 .search-icon {
-    position: absolute;
+    position: absolute; /*วางตำแหน่งอิสระ*/
     left: 10px;
     font-size: 0.85rem;
     color: #888;
@@ -709,12 +709,12 @@ input:focus {
     width: 100%;
     padding: 8px 10px 8px 32px;
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 6px; 
     font-size: 0.85rem;
 }
 
 .filter-select {
-    flex: 1;
+    flex: 1; /* กำหนดความกว้างของ select */
     padding: 8px 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -735,7 +735,7 @@ input:focus {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 20px; /* ระยะห่างระหว่างการ์ด */
 }
 
 /* Program Card Style */
