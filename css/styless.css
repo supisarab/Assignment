@@ -1038,7 +1038,7 @@ input:focus {
 .eye-icon {
     position: absolute;
     right: 12px;
-    color: #64748b;
+    color: #d41818;
     font-size: 0.9rem;
     cursor: pointer;
 }
@@ -1634,7 +1634,7 @@ body {
 .form-group .radio-group {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 50px;
     height: 40px;
     width: 100%;
     margin: 0;
